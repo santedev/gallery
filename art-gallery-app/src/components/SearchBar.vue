@@ -59,31 +59,6 @@
               <polygon points="25,10 10,40 40,40" fill="white" />
             </svg>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 50 50"
-              class="prohibit cursor-pointer"
-              v-if="composition.scale && scaleEvent"
-            >
-              <circle
-                cx="25"
-                cy="25"
-                r="20"
-                stroke="white"
-                stroke-width="3"
-                fill="none"
-              />
-              <line
-                x1="40"
-                y1="10"
-                x2="10"
-                y2="40"
-                stroke="white"
-                stroke-width="3"
-              />
-            </svg>
-            <svg
               class="cursor-pointer full-screen-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -462,13 +437,12 @@ onBeforeUnmount(() => {
 .relative:hover .art-card .arrow {
   transform: rotate(180deg);
 }
-.relative:hover .art-card .prohibit,
+
 .relative:hover .art-card .full-screen-icon,
 .relative:hover .composition-container {
   opacity: 1;
 }
 .composition-container,
-.art-card .prohibit,
 .art-card .full-screen-icon {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
