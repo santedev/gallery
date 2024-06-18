@@ -1,1 +1,1 @@
-page link: https://santedev.github.io/gallery/
+page link on https://santedev.github.io/gallery/
